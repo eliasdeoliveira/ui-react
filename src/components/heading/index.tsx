@@ -2,7 +2,7 @@ import React, { FC, HTMLAttributes } from 'react';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
-  children?: React.ReactNode;
+  children?: any;
 }
 
 // Please do not use types off of a default export module or else Storybook Docs will suffer.
@@ -11,5 +11,5 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
  * A custom Thing component. Neat!
  */
 export const Heading: FC<Props> = ({ children }) => {
-  return <div>{children || `Heading`}</div>;
+  return <header>{children || `Heading`}</header>;
 };
