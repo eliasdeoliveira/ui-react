@@ -1,4 +1,4 @@
-export { Heading } from './components/heading';
+export * from './components/heading';
 
 // import React, { FC, HTMLAttributes } from 'react';
 
